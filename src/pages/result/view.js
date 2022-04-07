@@ -12,7 +12,7 @@ const Result = () => {
   let location = useLocation();
   const [products, setProducts] = useState([]); 
   const [categories, setCategories] = useState([]); 
-  const [search, setSearch] = useState(location.search.replace("?search=", ""));
+  const [search, setSearch] = useState(location.search.replace("?search=", "").replace("%", " "));
   
   useEffect(
     () => {
@@ -38,7 +38,7 @@ const Result = () => {
                     <img alt="Product" className="image_product" src={pro.picture}></img>
                   </div>
                   <div className="detail_product">
-                    <h3>${Number(pro.price?.amount + pro.price?.decimals).toLocaleString('de-DE') }
+                    <h3>$ {Number(pro.price?.amount).toLocaleString('de-DE') }<sup>{pro.price?.decimals}</sup>
                     {
                       pro.free_shipping && <img alt="shipping icon" className="image_shipping" src={shipping_icon}></img>
                     }

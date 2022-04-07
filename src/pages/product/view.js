@@ -34,7 +34,7 @@ const Products = () => {
           <div className="details">
             <p>{ product.condition === "new" ? "Nuevo" : "Usado"} - {product.sold_quantity} Vendidos</p>
             <h4>{product.title}</h4>
-            <h3>${Number(product.price?.amount + product.price?.decimals).toLocaleString('de-DE') }</h3>
+            <h3>$ {Number(product.price?.amount).toLocaleString('de-DE') }<sup>{product.price?.decimals}</sup></h3>
             <button>Comprar</button>
           </div>
         </div>

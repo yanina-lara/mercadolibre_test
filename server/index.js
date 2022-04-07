@@ -42,7 +42,7 @@ app.get('/api/items', (req, res) => {
       }) => {
         const arrayPrice = String(price).split('.');
         const amount = Number(arrayPrice[0]);
-        const decimals = (Number(arrayPrice[1]) / 100) || 0;
+        const decimals = arrayPrice[1] ? `${arrayPrice[1][0] || '0'}${arrayPrice[1][1] || '0'}` : '00';
         return { 
           id,
           title,
@@ -92,7 +92,7 @@ app.get('/api/items/:id', (req, res) => {
     }) => {
     const arrayPrice = String(price).split('.');
     const amount = Number(arrayPrice[0]);
-    const decimals = (Number(arrayPrice[1]) / 100) || 0;
+    const decimals = arrayPrice[1] ? `${arrayPrice[1][0] || '0'}${arrayPrice[1][1] || '0'}` : '00';
     const item = {
       id,
       title,

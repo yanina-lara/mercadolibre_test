@@ -32,6 +32,9 @@
       h3{
         margin: 32px 0 32px 0;
         font-size: 45px;
+        sup{
+          font-size: 22px;
+        }
       }
       button{
         background-color: $blue;
