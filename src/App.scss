@@ -1,0 +1,18 @@
+$yellow: #FFE600;
+$gray-333: #333333;
+$gray-666: #666666;
+$gray-999: #999999;
+$gray-eee: #EEEEEE;
+$white: #FFFFFF;
+$blue: #3483fa;
+
+body{
+  background-color: $gray-eee;
+  width: 100%;
+  margin: 0;
+  .container{
+    max-width: 1200px;
+    margin:0px auto;
+    font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  }
+}

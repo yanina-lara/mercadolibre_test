@@ -1,0 +1,13 @@
+@import "../../App.scss";
+
+.container{
+  .categories{
+    margin: 16px 0;
+    span{
+      color: $gray-999;
+    }
+    span:last-child{
+      color: $gray-666;
+    }
+  }
+}

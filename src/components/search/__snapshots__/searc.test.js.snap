@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test de SearchInput Display component 1`] = `
+<body>
+  <div>
+    <div
+      class="search"
+    >
+      <div
+        class="container"
+      >
+        <form
+          data-testid="search-form"
+        >
+          <div
+            class="input_box"
+          >
+            <a
+              href="/"
+            >
+              <img
+                class="logo"
+                src="logo.png"
+              />
+            </a>
+            <input
+              class=""
+              data-testid="search-input"
+              id="inlineFormInputGroupUsername"
+              placeholder="Nunca dejes de buscar"
+              type="text"
+              value=""
+            />
+            <button
+              type="submit"
+            >
+              <img
+                height="15px"
+                src="search_icon.png"
+                width="15px"
+              />
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Test de SearchInput Display component 2 1`] = `
+<body>
+  <div>
+    <div
+      class="search"
+    >
+      <div
+        class="container"
+      >
+        <form
+          data-testid="search-form"
+        >
+          <div
+            class="input_box"
+          >
+            <a
+              href="/"
+            >
+              <img
+                class="logo"
+                src="logo.png"
+              />
+            </a>
+            <input
+              class=""
+              data-testid="search-input"
+              id="inlineFormInputGroupUsername"
+              placeholder="Nunca dejes de buscar"
+              type="text"
+              value="test"
+            />
+            <button
+              type="submit"
+            >
+              <img
+                height="15px"
+                src="search_icon.png"
+                width="15px"
+              />
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+`;

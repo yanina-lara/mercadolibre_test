@@ -1,0 +1,59 @@
+@import "../../App.scss";
+
+.result{
+  display: flex;
+  background-color: $white;
+  text-decoration: none;
+  .result_box{
+    margin: 0 15px;
+    @media(min-width: 768px){
+      display: flex;
+      margin: 16px 15px;
+    }
+  }
+  a{
+    text-decoration:none;
+    width: 100%;
+    color: $gray-333;
+  }
+  h3{
+    font-size: 24px;
+    margin-bottom: 32px;;
+  }
+  h4{
+    margin-bottom: 0px;
+    font-size: 18px;
+    margin-top: 0;
+  }
+  .detail_product{
+    width: 100%;
+  }
+  .origin{
+    min-width: 15%;
+  }
+  .image{
+    text-align: center;
+    margin: 0 1px;
+    @media(min-width: 768px){
+      text-align: left;
+      margin-right: 16px;
+    }
+  }
+  .image_product{
+    height: 180px;
+    width: 180px;
+    border-radius: 4px;
+  }
+  .image_shipping{
+    width: 20px;
+    height: 20px;
+    margin: 0 0 -2px 10px;
+  }
+  p{
+    color: $gray-999;
+    font-size: 12px;
+    @media(min-width: 768px){
+      margin-top: 45px;
+    }
+  }
+}
