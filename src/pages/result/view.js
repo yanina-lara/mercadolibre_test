@@ -38,7 +38,7 @@ const Result = () => {
                     <img alt="Product" className="image_product" src={pro.picture}></img>
                   </div>
                   <div className="detail_product">
-                    <h3>${pro.price.amount}
+                    <h3>${Number(pro.price?.amount + pro.price?.decimals).toLocaleString('de-DE') }
                     {
                       pro.free_shipping && <img alt="shipping icon" className="image_shipping" src={shipping_icon}></img>
                     }
